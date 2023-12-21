@@ -22,17 +22,6 @@
               </NuxtLink>
             </div>
           </div>
-          <div class="w-full md:w-auto p-2.5">
-            <a target="_blank" href="https://www.npmjs.com/package/zpayme">
-              <button
-                class="py-4 px-9 w-full font-semibold border border-gray-300 hover:border-gray-400 rounded-xl focus:ring focus:ring-gray-50 bg-transparent hover:bg-gray-100 transition ease-in-out duration-200"
-                type="button"
-              >
-                <div class="flex flex-wrap justify-center items-center">
-                  <div class="w-auto"></div>
-                </div></button
-            ></a>
-          </div>
         </div>
       </div>
       <div class="w-full md:w-1/2 p-0 md:p-8 hidden md:block">
