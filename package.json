@@ -8,7 +8,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "prettier --check .",
-    "lintfix": "prettier --write --list-different ."
+    "lintfix": "prettier --write --list-different .",
+    "pushit": " git add . && git commit -m 'pushit' &&  git pull && git push "
   },
   "dependencies": {
     "@nuxt/content": "^1.0.0",
