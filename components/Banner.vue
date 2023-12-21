@@ -71,7 +71,7 @@
 									<div class="w-auto">
 										<a
 											target="_blank"
-											href="https://github.com/zpayme/sdk"
+											href="https://www.npmjs.com/package/zpayme"
 											>View SDK</a
 										>
 									</div>
