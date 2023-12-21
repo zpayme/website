@@ -97,7 +97,8 @@
           <button
             class="flex items-center justify-center px-5 h-12 w-full mb-8 text-base font-semibold text-white bg-blue-600 hover:bg-blue-800 rounded-lg transition-all duration-300"
             type="button"
-            @click="generateLink" v-if="type !== 'usdt'"
+            @click="generateLink"
+            v-if="type !== 'usdt'"
           >
             Create Subscription
           </button>
@@ -105,7 +106,8 @@
           <button
             class="flex items-center justify-center px-5 h-12 w-full mb-8 text-base font-semibold text-white bg-blue-600 hover:bg-blue-800 rounded-lg transition-all duration-300"
             type="button"
-            @click="generateLinkUSD" v-if="type == 'usdt'"
+            @click="generateLinkUSD"
+            v-if="type == 'usdt'"
           >
             Create Subscription
           </button>
@@ -124,6 +126,7 @@
 </template>
 
 <script>
+
 function toHex(str) {
   var hex = "";
   for (var i = 0; i < str.length; i++) {
@@ -152,7 +155,7 @@ async function encodeSubscription(
 
   var hash = toHex(obj) || null;
 
-  return { hash: hash, link: "https://join.dakopay.com/#/check/" + hash };
+  return { hash: hash, link: "https://u.zpay.me/check/" + hash };
 }
 
 export default {
@@ -205,7 +208,7 @@ export default {
     async generateLinkUSD() {
       const mec = this.receiver;
 
-      this.link = `https://u.zpay.me/#/usd/${mec}/${this.cost}/${this.chargeDays}`;
+      this.link = `https://u.zpay.me/usd/${mec}/${this.cost}/${this.chargeDays}`;
     },
   },
 };
